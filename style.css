@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+   background-color: #1f242d;  
+}
+
+
+
+header {
+    background-color:#1f242d;
+    box-shadow: 0 4px 15px rgba(43, 3, 3, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(153, 239, 245);
+}
+
+.logo .span {
+    color: rgb(250, 71, 5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    color: rgb(241, 238, 236);
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: 0.3s;
+    color:rgb(247, 233, 228);
+}
+
+.nav-links a:hover {
+    color: rgb(5, 161, 154);
+}
+
+.btn-contact {
+    background: var(--primary);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    color: rgb(5, 250, 250);
+}
+
+.btn-contact:hover {
+    background:rgb(42, 120, 165);
+}
+
+.home{
+    justify-content:space-between;
+    display: flex;
+   padding: 20;
+  
+}
+.div1{
+    text-align: center;
+    padding: 130 200;
+    font-size: 35px;
+    
+}
+.div1 h2{
+    color:rgb(75, 188, 196) ;
+}
+.div1 h3{
+    color:rgb(75, 188, 196) ;
+    
+}
+
+.div1 p{
+    color:rgb(183, 190, 190) ;
+}
+.img{
+    display: block;
+    margin: 50px;
+    border-radius: 45%;
+    width: 400px;;
+     animation: float 1s ease-in-out infinite;
+     
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.head{
+    color:#57d4d8;
+    position: absolute;
+    left: 550;
+    
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+   padding: 20;
+
+    text-align: center;
+}
+.about p{
+color: rgb(180, 210, 218);
+text-align: center;
+font-size:25;
+padding: 50px;
+margin-top: 50;
+}
+.awards-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.awards-section h2 {
+    font-size: 36px;
+    color: #16d5ee;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    font-size: 16px;
+    color: #6ea09d;
+    margin-bottom: 50px;
+}
+
+
+.awards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+
+.award-card {
+
+    border-radius: 16px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeUp 1s ease forwards;
+}
+
+.award-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #d4af37;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.award-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+.award-card h3 {
+    font-size: 20px;
+    color: #29d7e4;
+    margin-bottom: 5px;
+}
+
+.organization {
+    font-weight: 600;
+    color: #338d86;
+}
+
+.year {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #81acaf;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.awar{
+    text-align: center;
+    color: #57d4d8;
+    margin: 40;
+    font-size:xxx-large;
+}
+.CERT{
+    display: flex;
+    
+    
+}
+
+.CERT img{
+    aspect-ratio: 2/2;
+    object-fit: contain;
+    width: 650px;
+}
+.CERT p{
+    color: #57d4d8;
+    text-align:center;
+}
+
+.skills-section{
+        max-width: 700;
+        margin:150;
+        padding: 150px;
+        border-radius:8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        color: rgb(0, 255, 221);
+        width: 1200px;
+        align-content: center;
+
+        
+    }
+
+    .skills-section h2{
+        text-align: center;
+        margin-bottom: 20px;
+        color:rgb(0, 255, 255);
+    }
+
+    .skill{
+        margin-bottom: 60px;
+        
+    }
+
+    .skill-name{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .progress{
+        width: 100%;
+        height: 17px;
+        background: #ddd;
+        border-radius: 5px;
+        padding:1;
+        color: #fbfcf8;
+    }
+
+    .progress-bar{
+        height: 100%;
+        background: #4caf50;
+        width: 0;
+        
+        
+    }
+
+    
+.section3 {
+    max-width: 1200px;
+    margin: 90px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+     animation: float 2s ease-in-out infinite;
+}
+
+
+.span6{
+    color: rgb(0, 225, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20;
+    text-decoration-line: underline;
+}
+
+.section3 div {
+   
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.section3 div:hover {
+    transform: translateY(-10px);
+}
+
+.section3 img {
+    width: 100%;
+    border-radius: 12px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.section3 h2 {
+    margin-top: 15px;
+    font-size: 22px;
+    color:rgb(0, 255, 234)
+}
+
+
+    .portfolio-section{
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px;
+        
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .portfolio-section h1{
+        text-align: center;
+        margin-bottom: 30px;
+        color:rgb(0, 255, 242);
+    }
+
+    .portfolio-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .portfolio-item{
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .portfolio-item:hover{
+        transform: scale(1.03);
+    }
+
+    .portfolio-item img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .portfolio-content{
+        padding: 15px;
+    }
+
+    .portfolio-content h3{
+        margin: 0;
+        font-size: 18px;
+        color:rgb(0, 247, 255);
+    }
+
+    .portfolio-content p{
+        margin-top: 5px;
+        font-size: 14px;
+        color:rgb(238, 228, 225);
+    }
+
+
+    .testimonial-section{
+        max-width: 900px;
+        margin: auto;
+        
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-section h2{
+        text-align: center;
+        margin-bottom: 30px;
+        color:rgb(0, 247, 255);
+    }
+
+    .testimonials{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    .testimonial{
+        background:rgb(63, 60, 92);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .testimonial:hover{
+        transform: scale(1.03);
+    }
+
+    .testimonial p{
+        font-size: 14px;
+        color: white;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .name{
+        font-weight: bold;
+        font-size: 15px;
+        color:rgb(0, 247, 255);
+    }
+
+    .testimonial .role{
+        font-size: 13px;
+        color:rgb(0, 255, 76);
+    }
+
+    
+    .testimonial::before{
+        content: "“";
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        top: -10px;
+        left: 10px;}
+ .signin-container {
+  width: 70%;
+  max-width: 7000px;
+  margin-left: 95;
+  
+  
+}
+
+.signin-form {
+  background: #0c477e;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  
+}
+
+.signin-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #06ddfa;
+  
+}
+
+.signin-form p {
+  text-align: center;
+  font-size: 14px;
+  color: #1d9cce;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #06ddfa;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #610f0f;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #457b9d;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: #06ddfa;
+}
+
+.options a {
+  text-decoration: none;
+  color: #457b9d;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #1d3557;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #457b9d;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #0f3974;
+  text-decoration: none;
+  font-weight: 500;
+}
+    
+
+    .footer {
+    color:rgb(247, 239, 236);
+    padding: 60px 20px 20px;
+    margin-top: 80px;
+    font-family: "Poppins", sans-serif;
+    background-image: url(/duceysane/footer-img.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+}
+
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: rgb(9, 236, 252);
+}
+
+.footer p {
+    margin-top: 10px;
+    line-height: 1.7;
+    color:rgb(238, 227, 222);
+}
+
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color:rgb(68, 197, 191);
+}
+
+
+.footer-section ul {
+    list-style: none;
+    color:rgb(224, 233, 232);
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color:rgb(225, 237, 238);
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color:rgb(0, 255, 213);
+    margin-left: 6px;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+
