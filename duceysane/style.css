@@ -1,0 +1,615 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #e7e8eb;
+    color: #222222;
+    line-height: 1.6;
+   
+}
+
+
+
+header {
+    background-color:rgb(28, 39, 102);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(131, 42, 9);
+}
+
+.logo .span {
+    color: rgb(250, 71, 5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    color: rgb(250, 71, 5);
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: 0.3s;
+    color: whitesmoke;
+}
+
+.nav-links a:hover {
+    color: rgb(250, 71, 5);
+}
+
+.btn-contact {
+    background: var(--primary);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    color: rgb(250, 71, 5);
+}
+
+.btn-contact:hover {
+    background: #77a0cc;
+}
+video{
+  left: 0;
+  right: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    margin-top: 100ox;
+
+}
+
+
+
+.home {
+    background-image: url(/home\ video.mp4);
+    padding: 160px 20px;
+    text-align: center;
+    background-size: cover;
+}
+
+.home h1 {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: orangered;
+}
+
+.home h4 {
+    font-size: 16px;
+    opacity: 0.9;
+    color: rgb(231, 219, 219);
+}
+
+.home p {
+    margin-top: 8px;
+}
+
+
+.section1 {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.section1 img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.section1 h1 {
+    font-size: 35px;
+    color: var(--primary);
+    font-weight: 700;
+    color: rgb(139, 41, 5);
+}
+
+.section1 h3 .span {
+    color:rgb(129, 44, 13);
+    font-size: 28px;
+}
+
+.section1 p {
+    margin-top: 15px;
+    font-size: 16px;
+    color:rgb(110, 36, 9)
+}
+
+.btn-services {
+    display: inline-block;
+    margin-top: 40px;
+    background: var(--secondary);
+    padding: 12px 25px;
+    color: rgb(250, 71, 5);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+    background-color: #184a7c;
+}
+
+.btn-services:hover {
+    background: orangered;
+}
+
+
+
+.section3 {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    background-image: url(/duceysane/images\ \(7\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.span6{
+    color: orangered;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.section3 div:hover {
+    transform: translateY(-10px);
+}
+
+.section3 img {
+    width: 100%;
+    border-radius: 12px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.section3 h2 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: var(--primary);
+}
+
+
+
+.card-container,
+.card-container2 {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    background-image: url(/duceysane/images\ \(7\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container h3 .span,
+.card-container2 h3 .span {
+    color: var(--primary);
+    
+}
+
+.card-container div,
+.card-container2 div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card-container div:hover,
+.card-container2 div:hover {
+    transform: translateY(-10px);
+}
+
+.card-container img,
+.card-container2 img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card-container h2,
+.card-container2 h2 {
+    margin-top: 12px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+
+@media (max-width: 900px) {
+    .nav-links,
+    .btn-contact {
+        display: none;
+    }
+
+    .section1 {
+        grid-template-columns: 1fr;
+    }
+
+    .section3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .home h2 {
+        font-size: 35px;
+    }
+
+    .section1 img {
+        height: 260px;
+        object-fit: cover;
+    }
+}
+
+
+.testimonials {
+    padding: 80px 20px;
+    background: #f4f6f9;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-image: url(/duceysane/download\ \(5\).jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6b8aa8;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+.testimonial-card img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #1b4a7a;
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #222;
+}
+
+.stars {
+    color: #f7b731;
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.testimonial-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    padding: 0 5px;
+}
+
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+}
+
+.team {
+    padding: 80px 20px;
+    background: #f4f6f9;
+    font-family: "Poppins", sans-serif;
+    background-image: url(/duceysane/download\ \(5\).jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6a88a7;
+    margin-bottom: 10px;
+}
+
+.team-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #f72b2b;
+    margin-bottom: 50px;
+}
+
+
+.team-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+
+.team-card {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1b4a7a;
+    margin-bottom: 15px;
+}
+
+
+.team-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+.team-card h4 {
+    font-size: 15px;
+    color: #1b4a7a;
+    margin-bottom: 10px;
+}
+
+
+.team-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+.team-socials a {
+    font-size: 20px;
+    color: #1b4a7a;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.team-socials a:hover {
+    color: #f7b731;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 600px) {
+    .team-title {
+        font-size: 28px;
+    }
+}
+
+
+.ceo-section {
+    padding: 80px 20px;
+    background: #f4f6f9;
+    font-family: "Poppins", sans-serif;
+    background-image: url(/duceysane/download\ \(5\).jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ceo-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.ceo-image img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1b4a7a;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.ceo-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.ceo-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d89f5;
+    margin-bottom: 20px;
+}
+
+.ceo-comment {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f7e6e6;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+
+.ceo-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #dd5151;
+}
+
+.ceo-role {
+    font-size: 15px;
+    color: #3485d6;
+}
+
+
+@media (max-width: 900px) {
+    .ceo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ceo-image img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+}
+
+
+.footer {
+     
+    color: #ffffff;
+    padding: 60px 20px 20px;
+    margin-top: 80px;
+    font-family: "Poppins", sans-serif;
+    background-image: url(/duceysane/footer-img.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+}
+
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: orangered;
+}
+
+.footer p {
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color:orangered;
+}
+
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(136, 43, 9);
+    margin-left: 6px;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
